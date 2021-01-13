@@ -1,0 +1,1018 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*Index.html page*/
+
+h1,h2,h3{
+    font-family: "PT Sans Narrow",Arial,sans-serif;
+}
+#logo{
+    font-size: 40px;
+    font-family: 'Acme',sans-serif;
+    padding-left: 15px;
+    color: darkgray;
+    margin-left: 20px;
+    
+}
+
+nav{
+    z-index: 1;
+    background-color: #910010;
+    width: 100%;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top:0;
+}
+
+
+.top-navigation{
+    margin-left: 80px;
+    list-style-type: none;
+    display: flex;
+}
+
+.top-navigation > li > a{
+    padding: 18px;
+    display: block;
+    text-decoration:none;
+    color: beige;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.top-navigation > li:hover{
+    background-color: crimson;
+}
+
+.active{
+    background-color:#700000;
+}
+
+.bg-picture{
+    margin-top: 65px;
+    max-height: 100vh;
+    width: 100%;
+    overflow-y: hidden;
+    position: relative;
+    display: inline-block;
+}
+
+.bg-picture > img {
+    display: block;
+}
+
+main{
+    background-color: ivory;
+}
+
+.main-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%;
+}
+
+.main-title > h1{
+    display: block;
+    font-size: 60px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#ancor{
+    display: block;
+    width: 200px;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 30px;
+    background-color: #fff;
+    text-align: center;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "PT Sans Narrow",Arial,sans-serif;
+    border-radius: 35px;
+    text-transform: uppercase;
+    background-color: #910010;
+    color: white;
+}
+#ancor:hover{
+    background-color: crimson;
+}
+
+.content{
+    padding-top: 80px;
+    padding-bottom: 60px;
+    background-color: ivory;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#onama{
+    text-align: center;
+    font-size: 50px;
+    display: block;
+}
+
+.about{
+    display: block;
+    margin:40px;
+    font-size: 20px;
+    width: 500px;
+    height: 420px;
+    flex-direction: row;
+}
+
+#first{
+    font-weight: bold;
+    font-size: 26px;
+    padding: 20px 0px 20px 0px;
+}
+
+#second{
+    padding: 20px 0px 20px 0px;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.second-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    justify-content: center;
+    background-color: #D2F898;
+
+}
+.assortment{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact-link{
+    display: flex;
+    justify-content: space-evenly;
+    height: 100px;
+    align-items: center;
+    margin-top: 50px;
+    font-size: 28px;
+}
+
+.link{
+    border: 0px;
+    background-color: #910010;
+    color: white;
+    padding: 25px;
+    border-radius: 35px;
+    font-family: "PT Sans Narrow",Arial,sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.link:hover{
+    background-color: crimson;
+}
+
+footer{
+    background-color: #910010;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    vertical-align: middle;
+    padding: 2em;
+}
+
+
+/* proizvodi i usluge */
+
+.all{
+    display: flex;
+}
+
+.side-navigation{
+    width: 15%;
+    display: flex;
+    flex-direction: column;   
+    background-color: #D2F898;
+}
+
+.side-navigation > a{
+    margin-top:25px;
+    margin-bottom: 25px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    text-align: center;
+    color: red;
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.side-navigation a:hover{
+    background-color: darkkhaki;
+}
+
+.container{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container > p,h3{
+    width: 70%;
+    text-align: justify;
+    padding:10px;
+    font-size:20px;
+}
+.container > h2{
+    margin-top:40px;
+    font-size: 40px;
+}
+
+.container > h3{
+    font-size: 30px;
+}
+
+.pic{
+    display:flex;
+    width:70%;
+    align-items: center;
+}
+
+.pic > p{
+    margin-left:30px;
+}
+
+.lists-of-meat{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:70%;
+    text-align: justify;
+    margin: 20px;
+    /* padding: 20px; */
+    list-style-type: square;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+.back-on-top{
+    margin: 20px;
+    border: 0px;
+    background-color: #910010;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    font-family: "PT Sans Narrow",Arial,sans-serif;
+    border-radius: 35px;
+}
+
+.back-on-top:hover{
+    background-color: crimson;
+}
+
+.bbq-links{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.catalog{
+    font-family: "PT Sans Narrow",Arial,sans-serif;
+    text-decoration: none;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.catalog:hover{
+    border: 1px solid blue;
+    padding: 15px;
+}
+
+
+/* Katalog */
+
+body{
+    width: 100%;
+    background-color: ivory;
+}
+
+
+.catalog-main-title{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    justify-content: center;
+    background-color: ivory;
+
+}
+
+.catalog-main{
+    width: 60%;
+    margin: 100px auto;
+    font-size: 18px;
+    
+}
+
+.catalog-container{
+    text-align: left;
+    margin-top: 50px;
+}
+
+
+/* cijenik */
+.main-price-list {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pricelist-main-title{
+    margin-top: 150px;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.meat-title{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.meat-prices{
+    border: 0.5px solid #910010;
+    /* width: 60%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:auto;
+}
+
+.meat-prices > h3{
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color:#910010;
+}
+
+.all-prices{
+    list-style-type: none;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.all-prices > li{
+    width: 100%;
+    padding: 20px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.small-text{
+    width: 100%;
+    text-align: right;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif; 
+}
+
+.bot-links{
+    /* width: 60%; */
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+    font-family: "PT Sans Narrow",Arial,sans-serif;
+    text-decoration: none;
+}
+
+.bot-links:hover{
+    text-decoration: underline;
+}
+
+
+/* Kontakt */
+
+
+.titles{
+    width: 100%;
+    display: block;
+    text-align:center;
+    margin-top: 150px;
+    margin-bottom: 150px;
+
+}
+.contact{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 2em;
+}
+
+.adress > h2{
+    margin-bottom: 25px;
+
+}
+
+#ime{
+    height: 35px;
+    margin:0px 0px 25px 0px;
+}
+
+#email{
+    height: 35px;
+    margin:0px 0px 25px 0px;
+}
+
+.submit, .reset{
+    margin: 20px 30px 20px 0px;
+    border: 0px;
+    background-color: #910010;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px 15px 20px;
+    font-family: "PT Sans Narrow",Arial,sans-serif;
+    border-radius: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+
+/* tableti i mobiteli  */
+@media (max-width: 600px){
+    /* nav */
+    nav{
+        width: 100%;
+        height: auto;
+        text-align: center;
+        display: block;
+        position: static;
+    }
+    .top-navigation{
+        width: 100%;
+        height: auto;
+        margin: 0;
+        display: block;
+    }
+    .top-navigation a{
+        font-size: 40px;
+    }
+
+    #logo {
+        margin: auto;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+    }
+
+    /*body*/
+    *{
+        overflow-x: hidden;
+    }
+
+    body{
+        width: 100%;
+        height: 100%;
+    }
+
+    .bg-picture{
+        width: 100%;
+        height: 50%;
+        margin-top: 0;
+    }
+
+    .main-title > h1{
+        font-size: 40px;
+    }
+
+    .main-title > #ancor{
+        font-size: 15px;
+        padding: 15px;
+    }
+
+    main{
+        width: 100%;
+    }
+
+    .content{
+        width: 100%;
+        display: inline-block;
+        padding:30px 0px 0px 0px;
+    }
+
+    .content > img{
+        width: 100%;
+        height: 100%;
+        margin: auto;
+    }
+
+    .about{
+        display: block;
+        font-size: 16px;
+    }
+
+    .second-content{
+        width: 100%;
+        height: 100%;
+        display: block;
+        margin: auto;
+        text-align: center;
+        padding: 0.5em;
+    }
+
+    .assortment{
+        display: inline-block;
+        margin-top: 50px;
+        width: 80%;
+    }
+
+    .contact-link{
+        display: inline-block;
+    }
+
+    .contact-link > p{
+        margin-bottom: 20px;
+    }
+
+    .link{
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    footer {
+        height: auto;
+    }
+
+    /* proizvodi */
+
+    .all {
+        width: 100%;
+        font-size: 16px;
+        display: inline-block;
+    }
+
+    .side-navigation {
+        width: 100%;
+        display: inherit;
+        height: 60%;
+        flex-direction: row;
+    }
+
+    .side-navigation > a{
+        width: 100%;
+    }
+
+    .container{
+        width: 100%;
+        margin: auto;
+        padding: 0.5em;
+    }
+
+    .pic{
+        display: inline-block;
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .pic > img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .container > p,ul{
+        font-size: 16px;
+    }
+
+    .media {
+        width: 100%;
+    }
+
+    /* katalog */
+
+    .catalog-main{
+        width: 100%;
+    }
+
+    .catalog-container > h2{
+        text-align: center;
+        margin: 20px;
+    }
+
+    .catalog-container > img{
+        width: 100%;
+    }
+
+    .catalog-container > p{
+        margin: 20px;
+    }
+
+    /* cijenik */
+
+    .meat-prices{
+        width: 80%;
+    }
+
+    /* kontakt */
+
+    .contact {
+        width: 70%;
+        display: block;
+        margin: 50px auto;
+    }
+
+    .adress {
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width:320px) and (max-width: 426px){
+    * {
+        overflow-x: hidden;
+    }
+        
+    body {
+        max-width: 100%;
+        font-size: 16px;
+    }
+
+    #logo{
+        margin: auto;
+    }
+
+    header{
+        width: 100%;
+    }
+
+    .top-navigation > li > a{
+        font-size: 20px;
+    }
+
+    .main-title {
+        width: 100%;
+    }
+
+    .main-title > h1{
+        font-size: 30px;
+    }
+
+    .main-title > #ancor {
+        width: 30%;
+        display: block;
+        font-size: 20px;
+        padding: 5px;
+        margin: 20px auto;
+    }
+
+    .content {
+        width: 100%;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+
+    .content > .about {
+        width: 100%;
+        height: 100%;
+        font-size: 16px;
+        margin: 0;
+        display: block;
+        padding: 2em 0.5em;
+    }
+
+    #onama {
+        font-size: 40px;
+    }
+
+    #first{
+        font-size: 25px;
+    }
+
+    #second {
+        font-size: 25px;
+    }
+
+    .assortment {
+        width: 100%;
+        height: 100%;
+    }
+
+    .assortment > img {
+        padding-bottom: 15px;
+    }
+
+    .contact-link {
+        width: 100%;
+        height: 100px;
+        margin:0;
+    }
+
+    .contact-link > p {
+        font-size: 20px;
+    }
+
+    .link {
+        padding: 9px;
+        width: 10%;
+        height: 100%;
+        margin-bottom: 50px;
+    }
+
+    /* proizvodi */
+
+    .container {
+        width: 100%;
+        height: 100%;
+        padding: 0.5em;
+    }
+
+    .container > p {
+        width: 100%;
+        text-align: left;
+        font-size: 16px;
+        margin: auto;
+    }
+
+    .container > h3 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .pic {
+        width: 100%;
+        margin: 0;
+    }
+
+    .pic > img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .pic > p {
+        margin-left: 0;
+    }
+
+    .lists-of-meat {
+        width: 100%;
+        margin: auto;
+        padding: 10px;
+        display: block;
+    }
+
+    .lists-of-meat > ul {
+        text-align: center;
+        margin: 20px auto;
+    }
+
+    .lists-of-meat > .back-on-top {
+        padding: 8px;
+        margin: auto;
+        text-align: center;
+        display: table;
+    }
+
+    .back-on-top {
+        margin: 0;
+    }
+
+    .media {
+        width: 100%;
+        height: 100%;
+    }
+
+    #suhomeso {
+        text-align: center;
+    }
+
+    .container > h2 {
+        font-size: 35px;
+    }
+
+    .container > h3 {
+        font-size: 25px;
+    }
+
+    .bbq-links > .back-on-top {
+        padding: 8px;
+    }
+
+    /* katalog */
+
+    .catalog-container > img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .catalog-container > p {
+        font-size: 16px;
+    }
+    /* cijenik */
+    .all-prices > li {
+        font-size: 16px;
+    }
+
+    .main-price-list {
+        width: 100%;
+    }
+
+    /* kontakt */
+
+    #ime {
+        width: 99%;
+    }
+
+    #email {
+        width: 99%;
+    }
+
+    #komentar {
+        width:99%
+    }
+
+    .submit, .reset {
+        width: 40%;
+        font-size: 16px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .submit-botton {
+        text-align: center;
+    }
+}
+
+
+@media (min-width: 601px) and (max-width:768px){
+    .top-navigation {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    #logo {
+        width: 20%;
+        margin: 5px;
+        padding: 0;
+        font-size: 30px;
+    }
+
+    .top-navigation > li > a {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        font-size: 20px;
+        margin: auto;
+    }
+    
+    .content {
+        padding: 1em;
+    }
+
+    .content > img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #ancor {
+        width: 20%;
+        padding: 10px;
+        font-size: 20px;
+        margin: 40px auto;
+    }
+
+    .container .pic {
+        display: block;
+    }
+   
+    .container .pic > img {
+        width: 100%;
+    }
+
+    .about {
+        width: 100%;
+        height: 100%;
+        font-size: 16px;
+    }
+
+    .assortment > img {
+        padding: 5px;
+        height: 100%;
+        width: 100%;
+    }
+
+    .link {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    /* proizvodi */
+
+    .side-navigation > a {
+        height: 50px;
+    }
+
+    .lists-of-meat ul {
+        text-align: center;
+    }
+
+    .container > p{
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .pic > img {
+        height: 100%;
+    }
+
+    .media {
+        width: 100%;
+    }
+
+    /* katalog */
+    .catalog-container img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .catalog-container > p {
+        font-size: 16px;
+    }
+
+    /* cijenik */
+    .meat-prices {
+        width: 80%;
+    }
+
+    main.contact {
+        padding: 1em;
+    }
+
+    .contact form {
+        padding: 0.5em;
+    }
+}
+
+@media (min-width: 768px){
+    * {
+        overflow-x: hidden;
+    }
+
+    .main-title {
+        height: 30%;
+    }
+
+    .about {
+        height: 100%;
+    }
+
+    .assortment > img {
+        padding: 10px;
+    }
+
+    .contariner > p {
+        text-align: left;
+    }
+
+    .media {
+        width: 70%;
+    }
+
+    .pic > img {
+        height: 100%;
+    }
+    
+    .main-price-list {
+        width: 100%;
+    }
+
+    .meat-prices {
+        width: 80%;
+    }
+}

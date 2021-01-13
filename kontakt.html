@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index.html</title>
+
+    <meta name="keywords" content="kontakt, dostava, dostava mesa">
+    <meta name="author" content="Nikolina Pelivan">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+
+    <link href="index-design.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="catalog-header">
+            <p id="logo">Mesnica</p>
+            <ul class="top-navigation">
+                <li><a href="index.html">Početna</a></li>
+                <li><a href="proizvodi.html">Proizvodi i usluge</a></li>
+                <li><a href="katalog.html">Katalog</a></li>
+                <li><a href="cjenik.html">Cjenik</a></li>
+                <li class="active"><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+        <div class="titles">
+            <h1>Kontaktirajte nas!</h1>
+            <h2>Vršimo dostavu na Vašu adresu</h2>
+        </div>
+    </header>
+
+    <main class="contact">
+        <article class="adress">
+            <h2>Kontakt</h2>
+            <p>
+                <i class="fa fa-map-marker" aria-hidden="true"></i> Adresa: Ul. Zrinsko Frankopanska 153, Split<br>
+                <i class="fa fa-phone" aria-hidden="true"></i> Telefon: 021/754-962<br>
+                <i class="fa fa-mobile" aria-hidden="true"></i> Mobitel: 098 8445 623<br>
+                <i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:mesnica@gmail.com">E-mail: mesnica@gmail.com</a> <br>
+                
+            </p>
+        </article>
+
+
+        <form name="obrazac" action="" method="POST" autocomplete="on">
+            <p>
+                <label for="ime">Ime i prezime*</label><br>
+                <input id="ime" name="imeiprezime" type="text" maxlength="30" size="50" required>
+            </p>
+
+            <p>
+                <label for="email">E-mail adresa*</label><br>
+                <input id="email" name="email" type="email" required size="50">
+            </p>
+
+            <p>
+                <label for="komentar">Vaš komentar</label><br>
+                <textarea id="komentar" name="komentar" rows="10" cols="52"></textarea>
+            </p>
+
+            <p class="submit-botton">
+                <input class="submit" name="submit" type="submit" value="Pošalji">
+                <input class="reset" name="reset" type="reset" value="Poništi">
+            </p>
+        </form>        
+    </main>
+
+    <footer>
+        <p>Seminarski rad za POU Algebra - Web dizajn</p>
+        &copy; 2020 Sva prava pridržana
+    </footer>
+
+
+</body>
+</html>
